@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" /> -->
+        <title>3DModel</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <!-- <script type="module" 
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            <script src="./_model-viewer_ Interactive Example_files/focus-visible.js.download" defer=""></script> -->
+        <!-- <title>Document</title> -->
+        <style>
+            .box{ display:flex;}
+            model-viewer { width:800px ;height:600px;margin:0,auto;}
+        </style>
+
+    </head>
+<body>
+    <model-viewer src="src="NeilArmstrong.glb" auto-rotate camera-controls alt="cube" background-color="#455A64"></model-viewer>
+    <div class="box">
+        <div>hello</div>
+            <div>
+                <model-viewer
+                    src="/static/models/Mitsubishi.glb"
+                    auto-rotate alt="boat">
+                </model-viewer>
+                <model-viewer src="/static/models/Mitsubishi.glb" alt="A 3D model of an astronaut" auto-rotate=""
+                    camera-controls="" data-js-focus-visible="" ar-status="not-presenting"></model-viewer>
+                <!-- <model-viewer src="https://poly.pizza/m/4qjS9tFhsJg" alt="A 3D model of an astronaut" auto-rotate=""
+                    camera-controls="" data-js-focus-visible="" ar-status="not-presenting"></model-viewer> -->
+    <model-viewer src="/static/models/Mitsubishi.glb" data-js-focus-visible camera-controls   ></model-viewer>
+                </div>
+    </div>
+
+    </body>
